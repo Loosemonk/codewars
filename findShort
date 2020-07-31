@@ -1,0 +1,15 @@
+import java.util.Arrays;
+
+public class Kata {
+    public static int findShort(String s) {
+    String [] cool = s.split(" ");
+     int shortest =  cool[0].length();
+      for (String i : cool){
+        if (shortest > i.length()){
+          shortest = i.length();
+        }
+      }
+    return shortest;
+    }
+  
+}
